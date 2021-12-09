@@ -1,0 +1,11 @@
+var name;
+name = "Даша";
+if (name==="Vika") {
+	console.log("Привет мне!");
+} else if (name==="Вова") {
+	console.log("Привет папе!");
+} else if (name==="Галя") {
+	console.log ("Привет маме!");
+} else {
+	console.log("Привет незнакомцу!");
+}

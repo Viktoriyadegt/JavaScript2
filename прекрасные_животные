@@ -1,0 +1,4 @@
+var animals = ["Кот", "Рыба", "Лемур", "Комодский варан"];
+for (var i = 0; i < animals.length; i++) {
+	console.log(animals[0] = animals[i] + " - прекрасное животное");
+} ;

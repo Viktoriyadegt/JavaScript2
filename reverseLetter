@@ -1,0 +1,6 @@
+function reverseLetter(str) {
+  //coding and coding..
+  str = str.replace(/[^a-zA-Z]/g, "");
+  return str.split("").reverse().join("");
+  
+}

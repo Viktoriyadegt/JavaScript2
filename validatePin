@@ -1,0 +1,21 @@
+function validatePIN (pin) { 
+  //return true or false
+  if(pin.length === 4 ||  pin.length === 6 ) {
+    if(/^[0-9]+$/.test(pin))  {
+      return true;
+    }else {return false;}
+  }else {
+      return false;
+      }
+      }
+      //Вам не нужно проверять длину вручную, regex может это сделать, например {4} or {6}
+Вы можете использовать \d вместо [0-9] , это короткая рука
+Плюс regex должно быть от конца до конца, т. е. с началом и концом должно быть указано с ^ ... $
+
+function validatePIN(pin) {
+  if (/^(\d{4}|\d{6})$/.test(pin)) {
+    return true;
+  } else {
+    return false;
+  }
+}
